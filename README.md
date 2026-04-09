@@ -30,7 +30,7 @@ Aplicación web para monitoreo de playas con visualización de datos en tiempo r
 
 ---
 
-*(Podés duplicar este bloque por cada proyecto)*
+*(Duplicar este bloque por cada proyecto)*
 
 ## 🎯 Objetivo
 
@@ -38,8 +38,8 @@ Mi objetivo es integrarme a un equipo de desarrollo donde pueda aportar valor, s
 
 ## 📫 Contacto
 
-- LinkedIn: [Tu perfil]
-- Email: [Tu email]
+- LinkedIn: https://www.linkedin.com/in/lucas-epherra-bb8141183/
+- Email: lucasepherra@gmail.com
 
 ---
 
