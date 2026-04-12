@@ -3,14 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lucas Epherra | Portfolio</title>
+    <title>Lucas Epherra | Frontend Developer</title>
+    <meta
+      name="description"
+      content="Portfolio de Lucas Epherra, desarrollador frontend junior enfocado en React, JavaScript y diseño responsive."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="nav">
@@ -20,12 +24,12 @@
           <span>Frontend Developer</span>
         </a>
 
-        <button class="menu-btn" id="menuBtn">Menú</button>
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">Menú</button>
 
         <ul class="nav-links" id="navLinks">
           <li><a href="#home">Inicio</a></li>
           <li><a href="#about">Sobre mí</a></li>
-          <li><a href="#projects">Portfolio</a></li>
+          <li><a href="#projects">Proyectos</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
       </div>
@@ -35,39 +39,39 @@
       <section class="hero container" id="home">
         <div class="hero-grid">
           <article class="hero-copy fade-up">
-            <span class="eyebrow">Portfolio minimalista · HTML / CSS / JS</span>
+            <span class="eyebrow">Portfolio · HTML / CSS / JavaScript</span>
             <h1>
-              Diseñando interfaces
-              <br />claras, modernas
-              <br />y funcionales.
+              Frontend claro,
+              <br />moderno y con
+              <br />buena base.
             </h1>
             <p>
-              Soy Lucas Epherra, desarrollador frontend en formación. Construyo experiencias web
-              responsivas, limpias y enfocadas en usabilidad, con una estética sobria y una base sólida
-              para migrar luego a React.
+              Soy Lucas Epherra, desarrollador frontend junior. Me enfoco en construir interfaces
+              responsivas, limpias y funcionales con HTML, CSS, JavaScript y React, buscando siempre una
+              experiencia visual sólida y código mantenible.
             </p>
 
             <div class="hero-actions">
               <a class="btn btn-primary" href="#projects">Ver proyectos</a>
-              <a class="btn btn-secondary" href="#contact">Contactarme</a>
+              <a class="btn btn-secondary" href="https://github.com/Lucas-Epherra" target="_blank" rel="noreferrer">GitHub</a>
             </div>
           </article>
 
-          <aside class="hero-card fade-up">
+          <aside class="hero-card fade-up" aria-hidden="true">
             <div class="mockup">
               <div class="mockup-top">
                 <div class="dots"><span></span><span></span><span></span></div>
-                <span>portfolio_preview.html</span>
+                <span>lucas-portfolio-preview</span>
               </div>
 
               <div class="mockup-grid">
                 <div class="mockup-panel">
                   <div class="mockup-chip"></div>
-                  <div style="height: 1rem"></div>
+                  <div class="space-md"></div>
                   <div class="mockup-line long"></div>
-                  <div style="height: 0.65rem"></div>
+                  <div class="space-sm"></div>
                   <div class="mockup-line mid"></div>
-                  <div style="height: 0.65rem"></div>
+                  <div class="space-sm"></div>
                   <div class="mockup-line short"></div>
 
                   <div class="mockup-cards">
@@ -78,9 +82,9 @@
 
                 <div class="mockup-sidebar">
                   <div class="bar"><span style="width: 88%"></span></div>
-                  <div class="bar"><span style="width: 76%"></span></div>
-                  <div class="bar"><span style="width: 92%"></span></div>
-                  <div class="bar"><span style="width: 69%"></span></div>
+                  <div class="bar"><span style="width: 80%"></span></div>
+                  <div class="bar"><span style="width: 74%"></span></div>
+                  <div class="bar"><span style="width: 91%"></span></div>
                 </div>
               </div>
 
@@ -96,27 +100,30 @@
       <section class="section" id="about">
         <div class="container about-grid">
           <article class="card-dark fade-up">
-            <div class="about-photo"></div>
+            <div class="about-photo">
+              <div class="about-photo-placeholder">Tu foto</div>
+            </div>
             <h3>Sobre mí</h3>
             <p>
-              Me enfoco en crear interfaces visualmente ordenadas y fáciles de usar. Trabajo con HTML,
-              CSS, JavaScript y React, y vengo construyendo proyectos donde aplico componentes
-              reutilizables, consumo de APIs, responsive design y lógica de negocio real.
+              Vengo construyendo proyectos propios donde aplico consumo de APIs, rutas protegidas,
+              autenticación, componentes reutilizables y diseño responsive. Busco mi primera oportunidad en
+              IT para aportar desde el primer día y seguir creciendo como desarrollador frontend.
             </p>
 
             <div class="about-meta">
               <span class="pill">React</span>
               <span class="pill">JavaScript</span>
               <span class="pill">Responsive Design</span>
-              <span class="pill">UI limpia</span>
+              <span class="pill">APIs REST</span>
             </div>
           </article>
 
           <article class="card-light fade-up">
             <h3>Habilidades</h3>
             <p>
-              Un stack simple, útil y orientado a construir productos que se vean bien y no exploten al
-              primer click. Bastante noble, como debería ser.
+              Stack orientado a frontend moderno: interfaces responsivas, lógica clara, componentes
+              reutilizables y una obsesión sana por que el sitio se vea bien sin convertirse en una nave
+              espacial innecesaria.
             </p>
 
             <div class="skills">
@@ -131,6 +138,22 @@
               <div>
                 <div class="skill-head">
                   <span>JavaScript</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-bar"><span style="width: 80%"></span></div>
+              </div>
+
+              <div>
+                <div class="skill-head">
+                  <span>React</span>
+                  <span>74%</span>
+                </div>
+                <div class="skill-bar"><span style="width: 74%"></span></div>
+              </div>
+
+              <div>
+                <div class="skill-head">
+                  <span>Bootstrap / SCSS</span>
                   <span>78%</span>
                 </div>
                 <div class="skill-bar"><span style="width: 78%"></span></div>
@@ -138,18 +161,10 @@
 
               <div>
                 <div class="skill-head">
-                  <span>React</span>
-                  <span>72%</span>
+                  <span>Git / GitHub</span>
+                  <span>75%</span>
                 </div>
-                <div class="skill-bar"><span style="width: 72%"></span></div>
-              </div>
-
-              <div>
-                <div class="skill-head">
-                  <span>UI / UX</span>
-                  <span>80%</span>
-                </div>
-                <div class="skill-bar"><span style="width: 80%"></span></div>
+                <div class="skill-bar"><span style="width: 75%"></span></div>
               </div>
             </div>
           </article>
@@ -160,10 +175,10 @@
         <div class="container fade-up">
           <div class="projects-top">
             <div>
-              <h2 class="section-title">Mi Portfolio</h2>
+              <h2 class="section-title">Proyectos</h2>
               <p class="section-copy">
-                Una selección de proyectos con foco en frontend, diseño visual consistente y estructura
-                pensada para evolucionar sin hacer llorar al repositorio.
+                Algunos de mis trabajos más representativos: sitios web, dashboards y aplicaciones donde fui
+                aplicando diseño, lógica y estructura escalable. Sin humo. Con código.
               </p>
             </div>
 
@@ -171,35 +186,32 @@
               <button class="filter-btn active" data-filter="all">Todo</button>
               <button class="filter-btn" data-filter="web">Web</button>
               <button class="filter-btn" data-filter="react">React</button>
-              <button class="filter-btn" data-filter="ui">UI</button>
+              <button class="filter-btn" data-filter="dashboard">Dashboard</button>
             </div>
           </div>
 
           <div class="projects-grid" id="projectsGrid">
-            <article class="project-card" data-category="web ui">
+            <article class="project-card" data-category="web">
               <div class="project-thumb"></div>
               <div class="project-content">
                 <span class="project-tag">Web</span>
-                <h3>Surf School Website</h3>
-                <p>Sitio responsive con foco en presentación visual, navegación clara y estructura moderna.</p>
+                <h3>Viento Norte Dunamar</h3>
+                <p>Sitio para escuela de surf desarrollado con foco en identidad visual, estructura clara y navegación responsive.</p>
+                <div class="project-actions">
+                  <a class="project-link" href="https://viento-norte-dunamar.netlify.app/" target="_blank" rel="noreferrer">Demo</a>
+                </div>
               </div>
             </article>
 
-            <article class="project-card" data-category="web react">
-              <div class="project-thumb"></div>
-              <div class="project-content">
-                <span class="project-tag">React</span>
-                <h3>Rescue Store</h3>
-                <p>Ecommerce con rutas, autenticación, componentes reutilizables y experiencia de usuario fluida.</p>
-              </div>
-            </article>
-
-            <article class="project-card" data-category="web ui">
+            <article class="project-card" data-category="web dashboard">
               <div class="project-thumb"></div>
               <div class="project-content">
                 <span class="project-tag">Dashboard</span>
                 <h3>Beach Monitoring App</h3>
-                <p>Dashboard visual con datos, alertas y enfoque en legibilidad para monitoreo operativo.</p>
+                <p>Aplicación visual de monitoreo con clima, alertas y panel de estado pensado para lectura rápida.</p>
+                <div class="project-actions">
+                  <a class="project-link" href="https://lucas-epherra.github.io/Beach-Monitoring-App/" target="_blank" rel="noreferrer">Demo</a>
+                </div>
               </div>
             </article>
 
@@ -208,25 +220,46 @@
               <div class="project-content">
                 <span class="project-tag">CRUD</span>
                 <h3>Registro de Intervenciones</h3>
-                <p>Proyecto orientado a registrar incidencias del servicio de guardavidas de forma ordenada.</p>
+                <p>Proyecto orientado al registro de incidencias del servicio de guardavidas, con enfoque práctico y utilidad real.</p>
+                <div class="project-actions">
+                  <a class="project-link" href="https://github.com/Lucas-Epherra/Registro-De-Intervenciones" target="_blank" rel="noreferrer">Código</a>
+                </div>
               </div>
             </article>
 
-            <article class="project-card" data-category="react ui">
+            <article class="project-card" data-category="react web">
               <div class="project-thumb"></div>
               <div class="project-content">
-                <span class="project-tag">UI</span>
-                <h3>Minimal Portfolio Concept</h3>
-                <p>Layout limpio, monocromático y pensado para mostrar proyectos sin ruido visual innecesario.</p>
+                <span class="project-tag">React</span>
+                <h3>Rescue Store</h3>
+                <p>Ecommerce construido con React, rutas, autenticación y componentes reutilizables orientados a escalabilidad.</p>
+                <div class="project-actions">
+                  <a class="project-link" href="https://github.com/Lucas-Epherra" target="_blank" rel="noreferrer">Ver perfil</a>
+                </div>
               </div>
             </article>
 
-            <article class="project-card" data-category="web ui">
+            <article class="project-card" data-category="web">
               <div class="project-thumb"></div>
               <div class="project-content">
                 <span class="project-tag">Landing</span>
-                <h3>Frontend Showcase</h3>
-                <p>Diseño editorial con bloques visuales, tipografía fuerte y jerarquía clara.</p>
+                <h3>Uva Surfboards</h3>
+                <p>Landing desarrollada con foco en estética, estructura visual y presencia digital de marca.</p>
+                <div class="project-actions">
+                  <a class="project-link" href="https://lucas-epherra.github.io/UvaSurfboards-Epherra/index.html" target="_blank" rel="noreferrer">Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="react web">
+              <div class="project-thumb"></div>
+              <div class="project-content">
+                <span class="project-tag">Portfolio</span>
+                <h3>Portfolio Personal</h3>
+                <p>Este portfolio como base visual minimalista, pensado para crecer luego hacia una versión en React.</p>
+                <div class="project-actions">
+                  <a class="project-link" href="https://lucas-epherra.github.io/Portfolio/" target="_blank" rel="noreferrer">Demo</a>
+                </div>
               </div>
             </article>
           </div>
@@ -238,28 +271,28 @@
           <article class="card-light fade-up">
             <h2 class="section-title section-title-small">Contacto</h2>
             <p class="contact-copy-light">
-              Disponible para oportunidades junior frontend, proyectos freelance o colaboraciones donde se
-              valore código claro, diseño prolijo y ganas reales de crecer.
+              Estoy abierto a oportunidades junior frontend, puestos trainee o proyectos donde pueda seguir
+              creciendo mientras aporto diseño, criterio visual y ganas reales de trabajar.
             </p>
 
             <div class="contact-list">
               <div class="contact-item"><span>Email</span><span>lucasepherra@gmail.com</span></div>
-              <div class="contact-item"><span>Ubicación</span><span>Buenos Aires, Argentina</span></div>
-              <div class="contact-item"><span>LinkedIn</span><span>/in/lucas-epherra</span></div>
+              <div class="contact-item"><span>Ubicación</span><span>Tres Arroyos, Buenos Aires, Argentina</span></div>
+              <div class="contact-item"><span>Inglés</span><span>Fluido / profesional</span></div>
             </div>
           </article>
 
           <article class="card-dark fade-up">
-            <h2 class="section-title section-title-small">Sígueme</h2>
+            <h2 class="section-title section-title-small">Enlaces</h2>
             <p class="section-copy section-copy-reset">
-              Acá podrían ir tus redes, GitHub, LinkedIn y cualquier enlace importante para reclutadores.
+              GitHub, LinkedIn y portfolio online para ver proyectos, código y evolución. Todo bastante más útil que decir “soy proactivo” sin mostrar nada.
             </p>
 
             <div class="socials">
-              <a class="social-link" href="#" aria-label="GitHub">GH</a>
-              <a class="social-link" href="#" aria-label="LinkedIn">in</a>
-              <a class="social-link" href="#" aria-label="Portfolio">PF</a>
-              <a class="social-link" href="#" aria-label="Email">@</a>
+              <a class="social-link" href="https://github.com/Lucas-Epherra" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+              <a class="social-link" href="https://www.linkedin.com/in/lucas-epherra-bb8141183/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+              <a class="social-link" href="https://lucas-epherra.github.io/Portfolio/" target="_blank" rel="noreferrer" aria-label="Portfolio">PF</a>
+              <a class="social-link" href="mailto:lucasepherra@gmail.com" aria-label="Email">@</a>
             </div>
           </article>
         </div>
@@ -268,10 +301,10 @@
 
     <footer class="footer">
       <div class="container">
-        <p>© 2026 Lucas Epherra. Hecho con HTML, CSS y JS antes de migrar a React como persona civilizada.</p>
+        <p>© <span id="currentYear"></span>Lucas Epherra - Portfolio</p>
       </div>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
