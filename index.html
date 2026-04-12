@@ -1,11 +1,277 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Epherra</title>
-</head>
-<body>
-    
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucas Epherra | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a href="#home" class="brand">
+          <strong>LUCAS EPHERRA</strong>
+          <span>Frontend Developer</span>
+        </a>
+
+        <button class="menu-btn" id="menuBtn">Menú</button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#projects">Portfolio</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container" id="home">
+        <div class="hero-grid">
+          <article class="hero-copy fade-up">
+            <span class="eyebrow">Portfolio minimalista · HTML / CSS / JS</span>
+            <h1>
+              Diseñando interfaces
+              <br />claras, modernas
+              <br />y funcionales.
+            </h1>
+            <p>
+              Soy Lucas Epherra, desarrollador frontend en formación. Construyo experiencias web
+              responsivas, limpias y enfocadas en usabilidad, con una estética sobria y una base sólida
+              para migrar luego a React.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">Ver proyectos</a>
+              <a class="btn btn-secondary" href="#contact">Contactarme</a>
+            </div>
+          </article>
+
+          <aside class="hero-card fade-up">
+            <div class="mockup">
+              <div class="mockup-top">
+                <div class="dots"><span></span><span></span><span></span></div>
+                <span>portfolio_preview.html</span>
+              </div>
+
+              <div class="mockup-grid">
+                <div class="mockup-panel">
+                  <div class="mockup-chip"></div>
+                  <div style="height: 1rem"></div>
+                  <div class="mockup-line long"></div>
+                  <div style="height: 0.65rem"></div>
+                  <div class="mockup-line mid"></div>
+                  <div style="height: 0.65rem"></div>
+                  <div class="mockup-line short"></div>
+
+                  <div class="mockup-cards">
+                    <div class="mockup-card"></div>
+                    <div class="mockup-card"></div>
+                  </div>
+                </div>
+
+                <div class="mockup-sidebar">
+                  <div class="bar"><span style="width: 88%"></span></div>
+                  <div class="bar"><span style="width: 76%"></span></div>
+                  <div class="bar"><span style="width: 92%"></span></div>
+                  <div class="bar"><span style="width: 69%"></span></div>
+                </div>
+              </div>
+
+              <div class="mockup-footer">
+                <div class="mockup-line short"></div>
+                <div class="mockup-line mid"></div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container about-grid">
+          <article class="card-dark fade-up">
+            <div class="about-photo"></div>
+            <h3>Sobre mí</h3>
+            <p>
+              Me enfoco en crear interfaces visualmente ordenadas y fáciles de usar. Trabajo con HTML,
+              CSS, JavaScript y React, y vengo construyendo proyectos donde aplico componentes
+              reutilizables, consumo de APIs, responsive design y lógica de negocio real.
+            </p>
+
+            <div class="about-meta">
+              <span class="pill">React</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">Responsive Design</span>
+              <span class="pill">UI limpia</span>
+            </div>
+          </article>
+
+          <article class="card-light fade-up">
+            <h3>Habilidades</h3>
+            <p>
+              Un stack simple, útil y orientado a construir productos que se vean bien y no exploten al
+              primer click. Bastante noble, como debería ser.
+            </p>
+
+            <div class="skills">
+              <div>
+                <div class="skill-head">
+                  <span>HTML / CSS</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar"><span style="width: 90%"></span></div>
+              </div>
+
+              <div>
+                <div class="skill-head">
+                  <span>JavaScript</span>
+                  <span>78%</span>
+                </div>
+                <div class="skill-bar"><span style="width: 78%"></span></div>
+              </div>
+
+              <div>
+                <div class="skill-head">
+                  <span>React</span>
+                  <span>72%</span>
+                </div>
+                <div class="skill-bar"><span style="width: 72%"></span></div>
+              </div>
+
+              <div>
+                <div class="skill-head">
+                  <span>UI / UX</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-bar"><span style="width: 80%"></span></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container fade-up">
+          <div class="projects-top">
+            <div>
+              <h2 class="section-title">Mi Portfolio</h2>
+              <p class="section-copy">
+                Una selección de proyectos con foco en frontend, diseño visual consistente y estructura
+                pensada para evolucionar sin hacer llorar al repositorio.
+              </p>
+            </div>
+
+            <div class="filters">
+              <button class="filter-btn active" data-filter="all">Todo</button>
+              <button class="filter-btn" data-filter="web">Web</button>
+              <button class="filter-btn" data-filter="react">React</button>
+              <button class="filter-btn" data-filter="ui">UI</button>
+            </div>
+          </div>
+
+          <div class="projects-grid" id="projectsGrid">
+            <article class="project-card" data-category="web ui">
+              <div class="project-thumb"></div>
+              <div class="project-content">
+                <span class="project-tag">Web</span>
+                <h3>Surf School Website</h3>
+                <p>Sitio responsive con foco en presentación visual, navegación clara y estructura moderna.</p>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="web react">
+              <div class="project-thumb"></div>
+              <div class="project-content">
+                <span class="project-tag">React</span>
+                <h3>Rescue Store</h3>
+                <p>Ecommerce con rutas, autenticación, componentes reutilizables y experiencia de usuario fluida.</p>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="web ui">
+              <div class="project-thumb"></div>
+              <div class="project-content">
+                <span class="project-tag">Dashboard</span>
+                <h3>Beach Monitoring App</h3>
+                <p>Dashboard visual con datos, alertas y enfoque en legibilidad para monitoreo operativo.</p>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="web">
+              <div class="project-thumb"></div>
+              <div class="project-content">
+                <span class="project-tag">CRUD</span>
+                <h3>Registro de Intervenciones</h3>
+                <p>Proyecto orientado a registrar incidencias del servicio de guardavidas de forma ordenada.</p>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="react ui">
+              <div class="project-thumb"></div>
+              <div class="project-content">
+                <span class="project-tag">UI</span>
+                <h3>Minimal Portfolio Concept</h3>
+                <p>Layout limpio, monocromático y pensado para mostrar proyectos sin ruido visual innecesario.</p>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="web ui">
+              <div class="project-thumb"></div>
+              <div class="project-content">
+                <span class="project-tag">Landing</span>
+                <h3>Frontend Showcase</h3>
+                <p>Diseño editorial con bloques visuales, tipografía fuerte y jerarquía clara.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container contact-grid">
+          <article class="card-light fade-up">
+            <h2 class="section-title section-title-small">Contacto</h2>
+            <p class="contact-copy-light">
+              Disponible para oportunidades junior frontend, proyectos freelance o colaboraciones donde se
+              valore código claro, diseño prolijo y ganas reales de crecer.
+            </p>
+
+            <div class="contact-list">
+              <div class="contact-item"><span>Email</span><span>lucasepherra@gmail.com</span></div>
+              <div class="contact-item"><span>Ubicación</span><span>Buenos Aires, Argentina</span></div>
+              <div class="contact-item"><span>LinkedIn</span><span>/in/lucas-epherra</span></div>
+            </div>
+          </article>
+
+          <article class="card-dark fade-up">
+            <h2 class="section-title section-title-small">Sígueme</h2>
+            <p class="section-copy section-copy-reset">
+              Acá podrían ir tus redes, GitHub, LinkedIn y cualquier enlace importante para reclutadores.
+            </p>
+
+            <div class="socials">
+              <a class="social-link" href="#" aria-label="GitHub">GH</a>
+              <a class="social-link" href="#" aria-label="LinkedIn">in</a>
+              <a class="social-link" href="#" aria-label="Portfolio">PF</a>
+              <a class="social-link" href="#" aria-label="Email">@</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 Lucas Epherra. Hecho con HTML, CSS y JS antes de migrar a React como persona civilizada.</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
 </html>
