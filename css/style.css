@@ -928,8 +928,8 @@ h1 {
   }
 
   .contact-cta-group {
-  flex-direction: column;
-}
+    flex-direction: column;
+  }
 
   .projects-top {
     align-items: start;
