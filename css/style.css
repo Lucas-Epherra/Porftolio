@@ -667,6 +667,29 @@ h1 {
   gap: 2rem;
 }
 
+.contact-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #111;
+  background: rgba(17, 17, 17, 0.08);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+}
+
+.contact-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1.8rem;
+}
+
 .contact-list {
   display: grid;
   gap: 1rem;
@@ -903,6 +926,10 @@ h1 {
   .contact-grid {
     grid-template-columns: 1fr;
   }
+
+  .contact-cta-group {
+  flex-direction: column;
+}
 
   .projects-top {
     align-items: start;
