@@ -492,9 +492,8 @@ a {
 }
 
 .skills-section {
-  padding: 4rem 1.5rem;
+  padding: 2rem 0 0;
 }
-
 .skills-title {
   text-align: center;
   font-size: 2rem;
@@ -637,6 +636,7 @@ a {
   position: relative;
   overflow: hidden;
   background: #111;
+  cursor: pointer;
 }
 
 .project-content {
