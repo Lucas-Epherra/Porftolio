@@ -252,6 +252,19 @@ h1 {
   background: rgba(255, 255, 255, 0.04);
 }
 
+.btn-light-section {
+  background: #ffffff;
+  color: #111111;
+  border: 1px solid rgba(17, 17, 17, 0.2);
+  transition: all 0.25s ease;
+}
+
+.btn-light-section:hover {
+  background: #111111;
+  color: #ffffff;
+  border-color: #111111;
+}
+
 .hero-card {
   overflow: hidden;
   position: relative;
@@ -471,32 +484,56 @@ h1 {
   opacity: 0.82;
 }
 
-.skills {
+.skills-section {
+  padding: 4rem 1.5rem;
+}
+
+.skills-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.skills-grid {
   display: grid;
-  gap: 1.2rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
 }
 
-.skill-head {
+.skills-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1.5rem;
+  backdrop-filter: blur(8px);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.skills-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.skills-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.skills-tags {
   display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  font-weight: 600;
-  margin-bottom: 0.6rem;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
-.skill-bar {
-  height: 12px;
-  background: rgba(0, 0, 0, 0.1);
+.skills-tags span {
+  display: inline-block;
+  padding: 0.55rem 0.9rem;
   border-radius: 999px;
-  overflow: hidden;
-}
-
-.skill-bar span {
-  display: block;
-  height: 100%;
-  border-radius: inherit;
-  background: linear-gradient(90deg, #141414, #64676d);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.95rem;
 }
 
 .projects-top {
@@ -578,6 +615,13 @@ h1 {
   display: block;
   object-fit: cover;
   object-position: top center;
+}
+
+.project-subtitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  opacity: 0.85;
+  margin: 0.35rem 0 0.9rem;
 }
 
 .project-thumb {

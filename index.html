@@ -67,7 +67,9 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+  <!-- body -->
   <body>
+    <!-- navbar -->
     <header class="nav">
       <div class="container nav-inner">
         <a href="#home" class="brand">
@@ -87,7 +89,7 @@
         </ul>
       </div>
     </header>
-
+    <!-- contenido principal -->
     <main>
       <section class="hero container" id="home">
         <div class="hero-grid">
@@ -206,7 +208,7 @@
           </article>
 
           <article class="card-light fade-up">
-            <h3>Habilidades</h3>
+            <h3 class="skills-title">Habilidades</h3>
             <p>
               Stack orientado a frontend moderno: interfaces responsivas, lógica
               clara, componentes reutilizables y una obsesión sana por que el
@@ -214,45 +216,39 @@
               innecesaria.
             </p>
 
-            <div class="skills">
-              <div>
-                <div class="skill-head">
-                  <span>HTML / CSS</span>
-                  <span>90%</span>
+            <div class="skills-section" id="skills">
+              <div class="skills-grid">
+                <div class="skills-card">
+                  <h3>Stack principal</h3>
+                  <div class="skills-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                  </div>
                 </div>
-                <div class="skill-bar"><span style="width: 90%"></span></div>
-              </div>
 
-              <div>
-                <div class="skill-head">
-                  <span>JavaScript</span>
-                  <span>80%</span>
+                <div class="skills-card">
+                  <h3>Herramientas y tecnologías</h3>
+                  <div class="skills-tags">
+                    <span>Bootstrap</span>
+                    <span>Sass</span>
+                    <span>Firebase</span>
+                    <span>Git</span>
+                    <span>GitHub</span>
+                  </div>
                 </div>
-                <div class="skill-bar"><span style="width: 80%"></span></div>
-              </div>
 
-              <div>
-                <div class="skill-head">
-                  <span>React</span>
-                  <span>74%</span>
+                <div class="skills-card">
+                  <h3>Enfoque</h3>
+                  <div class="skills-tags">
+                    <span>Responsive Design</span>
+                    <span>APIs REST</span>
+                    <span>Autenticación</span>
+                    <span>Rutas protegidas</span>
+                    <span>Componentes reutilizables</span>
+                  </div>
                 </div>
-                <div class="skill-bar"><span style="width: 74%"></span></div>
-              </div>
-
-              <div>
-                <div class="skill-head">
-                  <span>Bootstrap / SCSS</span>
-                  <span>78%</span>
-                </div>
-                <div class="skill-bar"><span style="width: 78%"></span></div>
-              </div>
-
-              <div>
-                <div class="skill-head">
-                  <span>Git / GitHub</span>
-                  <span>75%</span>
-                </div>
-                <div class="skill-bar"><span style="width: 75%"></span></div>
               </div>
             </div>
           </article>
@@ -288,13 +284,15 @@
 
               <div class="project-content">
                 <span class="project-tag">Dashboard</span>
-                <h3>Beach Monitoring App</h3>
-
+                <h3>BeachApp</h3>
+                <p class="project-subtitle">Dashboard de monitoreo costero</p>
                 <p>
-                  Aplicación visual de monitoreo con clima, alertas y panel de
-                  estado pensado para lectura rápida.
+                  Dashboard de monitoreo costero diseñado para centralizar
+                  información relevante como clima, alertas y estado de playa en
+                  una interfaz visual, clara y responsive. El proyecto pone el
+                  foco en la legibilidad, la jerarquía de datos y la experiencia
+                  del usuario.
                 </p>
-
                 <div class="project-stack">
                   <span>JavaScript</span>
                   <span>API</span>
@@ -339,11 +337,15 @@
 
               <div class="project-content">
                 <span class="project-tag">CRUD</span>
-                <h3>Registro de Intervenciones</h3>
-
+                <h3>PlayaSegura</h3>
+                <p class="project-subtitle">
+                  Sistema CRUD para incidencias de guardavidas
+                </p>
                 <p>
-                  Sistema orientado al registro de incidencias del servicio de
-                  guardavidas, con enfoque práctico y utilidad real.
+                  Sistema CRUD enfocado en el registro y gestión de incidencias
+                  del servicio de guardavidas. Fue pensado para resolver una
+                  necesidad operativa real, permitiendo cargar, consultar y
+                  organizar intervenciones de forma simple, rápida y funcional.
                 </p>
 
                 <div class="project-stack">
@@ -390,10 +392,15 @@
               <div class="project-content">
                 <span class="project-tag">React</span>
                 <h3>Rescue Store</h3>
-
+                <p class="project-subtitle">
+                  Ecommerce en React con autenticación y rutas protegidas
+                </p>
                 <p>
-                  Ecommerce construido con React, rutas, autenticación y
-                  componentes reutilizables orientados a escalabilidad.
+                  Ecommerce desarrollado con React, con autenticación de
+                  usuarios, rutas protegidas y flujo de compra, construido con
+                  una arquitectura basada en componentes reutilizables. El
+                  proyecto busca ofrecer una experiencia moderna, ordenada y
+                  escalable.
                 </p>
 
                 <div class="project-stack">
@@ -462,23 +469,15 @@
               </a>
 
               <a
-                class="btn btn-outline"
                 href="./assets/cv/lucas-epherra-frontend-cv.pdf"
-                target="_blank"
-                rel="noreferrer"
-                download
+                class="btn btn-light-section"
+                >Descargar CV</a
               >
-                Descargar CV (Español)
-              </a>
               <a
-                class="btn btn-outline"
                 href="./assets/cv/lucas-epherra-frontend-ingles-cv.pdf"
-                target="_blank"
-                rel="noreferrer"
-                download
+                class="btn btn-light-section"
+                >Download CV</a
               >
-                Download CV (English)
-              </a>
             </div>
           </article>
 
