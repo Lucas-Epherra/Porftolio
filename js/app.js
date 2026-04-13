@@ -1,7 +1,5 @@
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
-const filterButtons = document.querySelectorAll(".filter-btn");
-const projectCards = document.querySelectorAll(".project-card");
 const fadeItems = document.querySelectorAll(".fade-up");
 const currentYear = document.getElementById("currentYear");
 
@@ -19,20 +17,7 @@ navLinks?.querySelectorAll("a").forEach((link) => {
   });
 });
 
-filterButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    filterButtons.forEach((btn) => btn.classList.remove("active"));
-    button.classList.add("active");
 
-    const filter = button.dataset.filter;
-
-    projectCards.forEach((card) => {
-      const categories = card.dataset.category || "";
-      const shouldShow = filter === "all" || categories.includes(filter);
-      card.style.display = shouldShow ? "block" : "none";
-    });
-  });
-});
 
 const observer = new IntersectionObserver(
   (entries) => {
