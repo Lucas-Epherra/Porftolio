@@ -201,7 +201,7 @@
 
             <div class="filters">
               <button class="filter-btn active" data-filter="all">Todo</button>
-              <button class="filter-btn" data-filter="web">Web</button>
+              <button class="filter-btn" data-filter="crud">Crud</button>
               <button class="filter-btn" data-filter="react">React</button>
               <button class="filter-btn" data-filter="dashboard">
                 Dashboard
@@ -211,12 +211,17 @@
 
           <div class="projects-grid" id="projectsGrid">
             <article class="project-card" data-category="web dashboard">
-              <div class="project-thumb">
+              <div
+                class="project-thumb"
+                data-full="./assets/projects/beach-monitoring.jpg"
+                data-title="Beach Monitoring App"
+              >
                 <img
                   src="./assets/projects/beach-monitoring.jpg"
                   alt="Captura del proyecto Beach Monitoring App"
                   class="project-image"
                 />
+                <span class="project-preview-hint">Ver Preview</span>
               </div>
 
               <div class="project-content">
@@ -230,7 +235,7 @@
                 <div class="project-actions">
                   <a
                     class="project-link"
-                    href="https://lucas-epherra.github.io/Beach-Monitoring-App/"
+                    href="https://playa-segura.netlify.app/index.html"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -240,13 +245,18 @@
               </div>
             </article>
 
-            <article class="project-card" data-category="web">
-              <div class="project-thumb">
+            <article class="project-card" data-category="crud">
+              <div
+                class="project-thumb"
+                data-full="./assets/projects/playa-segura.jpg"
+                data-title="Registro de Intervenciones"
+              >
                 <img
                   src="./assets/projects/playa-segura.jpg"
                   alt="Captura del proyecto Registro de Intervenciones"
                   class="project-image"
                 />
+                <span class="project-preview-hint">Ver Preview</span>
               </div>
 
               <div class="project-content">
@@ -260,7 +270,7 @@
                 <div class="project-actions">
                   <a
                     class="project-link"
-                    href="https://github.com/Lucas-Epherra/Registro-De-Intervenciones"
+                    href="https://lucas-epherra.github.io/BeachApp/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -271,12 +281,17 @@
             </article>
 
             <article class="project-card" data-category="react web">
-              <div class="project-thumb">
+              <div
+                class="project-thumb"
+                data-full="./assets/projects/rescue-store.jpg"
+                data-title="Rescue Store"
+              >
                 <img
                   src="./assets/projects/rescue-store.jpg"
                   alt="Captura del proyecto Rescue Store"
                   class="project-image"
                 />
+                <span class="project-preview-hint">Ver Preview</span>
               </div>
 
               <div class="project-content">
@@ -290,7 +305,7 @@
                 <div class="project-actions">
                   <a
                     class="project-link"
-                    href="https://github.com/Lucas-Epherra"
+                    href="https://rescue-store.netlify.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -372,12 +387,34 @@
       </section>
     </main>
 
+    <div class="image-modal" id="imageModal" aria-hidden="true">
+      <div class="image-modal-backdrop" id="imageModalBackdrop"></div>
+
+      <div
+        class="image-modal-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="imageModalTitle"
+      >
+        <button
+          class="image-modal-close"
+          id="imageModalClose"
+          aria-label="Cerrar imagen"
+        >
+          ×
+        </button>
+
+        <p class="image-modal-title" id="imageModalTitle"></p>
+
+        <img src="" alt="" class="image-modal-img" id="imageModalImg" />
+      </div>
+    </div>
+
     <footer class="footer">
       <div class="container">
         <p>© <span id="currentYear"></span>Lucas Epherra - Portfolio</p>
       </div>
     </footer>
-
     <script src="./js/app.js"></script>
   </body>
 </html>
