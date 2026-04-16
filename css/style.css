@@ -759,7 +759,7 @@ a {
 }
 
 .contact-item span:last-child {
-  color: var(--text-soft);
+  color: var(--white-panel-text);
   text-align: right;
 }
 
